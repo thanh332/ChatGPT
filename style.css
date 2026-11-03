@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080d20;
+    color: #f4efff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #151638, #38235c, #101b3d);
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(35px, 7vw, 65px);
+    letter-spacing: 8px;
+    color: #e4c8ff;
+    text-shadow: 0 0 25px #a76aff;
+}
+
+header p {
+    margin-top: 15px;
+    color: #c6b9dd;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding: 22px;
+    background: #11132c;
+    border-bottom: 1px solid #7652a8;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d6aaff;
+    text-shadow: 0 0 12px #b47aff;
+}
+
+.hero {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #30234e, #080d20 70%);
+}
+
+.symbol {
+    font-size: 65px;
+    color: #d6aaff;
+    animation: float 3s infinite ease-in-out;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    margin: 15px 0;
+    color: #e0c3ff;
+}
+
+.hero p {
+    color: #c5b9db;
+    margin-bottom: 25px;
+}
+
+.button, button {
+    background: linear-gradient(90deg, #8053b9, #c17be9);
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.button:hover, button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #b47aff;
+}
+
+#welt {
+    padding: 80px 25px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.card {
+    background: linear-gradient(145deg, #1c1c40, #292044);
+    padding: 35px 20px;
+    border: 1px solid #604a83;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-12px) rotate(1deg);
+    box-shadow: 0 10px 35px #5c368b66;
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    margin: 15px;
+    color: #d6b4ff;
+}
+
+.card p {
+    color: #c3bad5;
+    font-size: 14px;
+}
+
+.secret {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #211738, #10152e);
+}
+
+#answer {
+    margin-top: 25px;
+    color: #e4baff;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #a58bbf;
+    letter-spacing: 5px;
+    background: #080b19;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 18px;
+    }
+
+    header h1 {
+        letter-spacing: 3px;
+    }
+}

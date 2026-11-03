@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <header>
+        <h1>THE SECRET WORLD</h1>
+        <p>Manche Geheimnisse sollte man entdecken ...</p>
+    </header>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#welt">Die Welt</a>
+        <a href="#geheimnis">Geheimnis</a>
+    </nav>
+
+    <main>
+        <section id="start" class="hero">
+            <span class="symbol">✦</span>
+            <h2>Willkommen im Unbekannten</h2>
+            <p>Du bist hier nicht zufällig gelandet.</p>
+            <a class="button" href="#welt">Entdecken →</a>
+        </section>
+
+        <section id="welt">
+            <h2>Eine andere Welt</h2>
+            <div class="cards">
+                <div class="card">
+                    <span>🌙</span>
+                    <h3>Die Nacht</h3>
+                    <p>Wenn die Welt schläft, beginnt etwas Neues.</p>
+                </div>
+                <div class="card">
+                    <span>🦋</span>
+                    <h3>Verwandlung</h3>
+                    <p>Nichts bleibt für immer so, wie es ist.</p>
+                </div>
+                <div class="card">
+                    <span>🔮</span>
+                    <h3>Das Unbekannte</h3>
+                    <p>Manche Dinge warten nur darauf, gefunden zu werden.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="geheimnis" class="secret">
+            <h2>Das letzte Geheimnis</h2>
+            <p>Du hast es bis hierher geschafft.</p>
+            <button onclick="reveal()">Geheimnis öffnen ✨</button>
+            <p id="answer"></p>
+        </section>
+    </main>
+
+    <footer>
+        ✦ THE SECRET WORLD ✦
+    </footer>
+
+    <script>
+        function reveal() {
+            document.getElementById("answer").innerHTML =
+                "🎉 Du bist jetzt Teil dieser geheimen Welt!";
+        }
+    </script>
+
+</body>
+</html>
